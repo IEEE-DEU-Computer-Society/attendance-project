@@ -1,0 +1,336 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+
+    padding: 20px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+
+body{
+
+    background: linear-gradient(to right, orange 30%, blue);
+
+}
+
+.navigation a{
+
+    position: relative;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.navigation a::after{
+
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: 0.5s;
+
+}
+
+.navigation a:hover::after{
+
+    transform: scaleX(1);
+    transition: 0.5s;
+
+}
+
+.navigation .nav-button{
+
+    width: 150px;
+    height: 50px;
+    font-size: 1.1em;
+    margin-left: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.navigation .nav-button:hover{
+
+    background-color: #fff;
+    color: black;
+    transition: 0.5s;
+
+}
+
+.welcome-part{
+
+    background: transparent;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 70px 100px;
+
+}
+
+.welcome-part h5{
+
+    font-size: 1.2em;
+    margin: 40px 0;
+
+}
+
+.btn{
+
+    width: 170px;
+    height: 50px;
+    background: transparent;
+    border: 5px solid rgba(0, 0, 0);
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.btn:hover{
+
+    color:#fff;
+    background-color: black;
+    transition: .5s;
+
+}
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.information-box{
+
+    width: 65%;
+    height: 120vh;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-box{
+
+    width: 35%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.information, .profile{
+
+    width: 80%;
+    height: 80%;
+    border: 10px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.profile {
+
+   margin-right: 100px;
+
+}
+
+.profile .image-and-fullname{
+
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+
+}
+
+.image-and-fullname h1{
+
+    margin-top: 10px;
+
+}
+
+.profile .go-to-box{
+
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.go-to-box .icon-and-title{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.go-to-box .button{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button button{
+
+    width: 170px;
+    height: 50px;
+    border: 3px solid rgba(0, 0, 0);
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.button button:hover{
+
+    color: #fff;
+    background-color: black;
+    transition: .5s;
+
+}
+
+.icon-and-title i{
+
+    font-size: 7em;
+
+}
+
+hr{
+
+    width: 90%;
+    display: flex;
+    border-radius: 100px;
+    border-color: black;
+    background-color: black;
+    border: 3px solid rgba(0, 0, 0);
+
+}
+
+.info-box{
+
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-you{
+
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-you textarea{
+
+    width: 80%;
+    height: 60%;
+    color: #fff;
+    font-size: 1.2em;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    cursor: default;
+
+}
+
+.about-you label{
+
+    position: absolute;
+    top: 20px;
+    left: 50px;
+
+}
+
+
+
+.input{
+
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+}
+
+.input label{
+    
+    position: absolute;
+    top: 20px;
+    left: 10px;
+
+}
+
+.input input{
+
+    background-color: black;
+    display: flex;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    cursor: default;
+
+}
